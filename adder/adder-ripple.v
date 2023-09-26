@@ -36,7 +36,8 @@ full_adder  ADD0 (.a(a[0]), .b(b[0]), .in_c(zero), .s(answer[0]), .out_c(c[0])),
             ADD12 (.a(a[12]), .b(b[12]), .in_c(c[11]), .s(answer[12]), .out_c(c[12])),
             ADD13 (.a(a[13]), .b(b[13]), .in_c(c[12]), .s(answer[13]), .out_c(c[13])),
             ADD14 (.a(a[14]), .b(b[14]), .in_c(c[13]), .s(answer[14]), .out_c(c[14])),
-            ADD15 (.a(a[15]), .b(b[15]), .in_c(c[14]), .s(answer[15]), .out_c(out_c));
+            ADD15 (.a(a[15]), .b(b[15]), .in_c(c[14]), .s(answer[15]), .out_c(c[15]));
+assign carry = c[15];
 endmodule
 
 module full_adder(
