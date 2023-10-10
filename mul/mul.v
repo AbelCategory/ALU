@@ -25,9 +25,9 @@ assign pp6 = {{3{b6[16]}}, b6, {12{1'b0}}};
 assign pp7 = {{1{b7[16]}}, b7, {14{1'b0}}};
 Wallace wallce(pp0, pp1, pp2, pp3, pp4, pp5, pp6, pp7, mul);
 
-always @(*) begin
-    $display("%d %d %d %d %d %d %d %d",pp0,pp1,pp2,pp3,pp4,pp5,pp6,pp7);
-end
+// always @(*) begin
+//     $display("%d %d %d %d %d %d %d %d",pp0,pp1,pp2,pp3,pp4,pp5,pp6,pp7);
+// end
 endmodule //Mul
 
 
